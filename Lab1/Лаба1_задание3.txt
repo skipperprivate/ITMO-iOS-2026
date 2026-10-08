@@ -1,0 +1,39 @@
+import Foundation
+
+struct PriorityItem<T> {
+    let value: T
+    let priority: Int
+}
+
+struct PriorityQueue<T> {
+    private var items: [PriorityItem<T>] = []
+
+    var isEmpty: Bool {
+        return items.isEmpty
+    }
+
+    var count: Int {
+        return items.count
+    }
+
+    mutating func enqueue(_ value: T, priority: Int) {
+        let newItem = PriorityItem(value: value, priority: priority)
+        items.append(newItem)
+
+        items.sort {
+            $0.priority > $1.priority
+        }
+    }
+
+    mutating func dequeue() -> T? {
+        if items.isEmpty {
+            return nil
+        }
+
+        return items.removeFirst().value
+    }
+
+    func peek() -> T? {
+        return items.first?.value
+    }
+}
