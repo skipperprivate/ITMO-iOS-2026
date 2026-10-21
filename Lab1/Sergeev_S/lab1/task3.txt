@@ -1,0 +1,90 @@
+/*
+Реализовать очередь с приоритетом кастомную
+
+для простоты Double, можно в дальнейшем использовать дженерики
+родитель(i) = (i - 1) / 2
+левый(i)    = 2 * i + 1
+правый(i)   = 2 * i + 2
+*/
+
+struct PriorityQueueDouble {
+  private var items: [Double] = []
+
+  var isEmpty: Bool {  // хранятся как вычисляемые переменные, не функции
+    items.isEmpty
+  }
+
+  var peek: Double? {
+    items.first
+  }
+
+  var count: Int {
+    items.count
+  }
+
+  mutating func enqueue(_ value: Double) { // внешнего имени нет, index - внутренее имя
+    items.append(value)
+    shiftUp(from: items.count - 1)
+  } 
+
+  mutating func dequeue() -> Double? {
+    guard !items.isEmpty else { return nil }
+    if items.count == 1 {
+      return items.removeLast()
+    }
+    items.swapAt(0,items.count-1)
+    let top = items.removeLast()
+    shiftDown(from: 0)
+    return top
+  }
+
+  private mutating func shiftUp(from index: Int) { // from - внешнее имя, index - внутренее имя
+    var child = index
+    while child > 0 {
+      let parent = (child - 1) / 2
+      if items[child] < items[parent] {           // сравнение - порядок
+        items.swapAt(child, parent)
+        child = parent
+      } else {
+        break
+      }
+    }
+  }
+
+  private mutating func shiftDown(from index: Int) {
+    var parent = index
+    while true {
+      let left = 2 * parent + 1
+      let right = 2 * parent + 2
+      var smallest = parent
+
+      if left < items.count, items[left] < items[smallest] {  // сравнение - порядок
+        smallest = left
+      }
+      if right < items.count, items[right] < items[smallest] {  // сравнение - порядок
+        smallest = right
+      }
+      if smallest == parent {
+        break
+      }
+      items.swapAt(parent, smallest)
+      parent = smallest
+    }
+  }
+}
+
+
+var pq = PriorityQueueDouble()
+pq.enqueue(3)
+pq.enqueue(1)
+pq.enqueue(5)
+pq.enqueue(2)
+pq.enqueue(4)
+
+print(pq.peek ?? 0)       // 1
+print(pq.dequeue() ?? 0)  // 1
+print(pq.dequeue() ?? 0)  // 2
+print(pq.dequeue() ?? 0)  // 3
+print(pq.dequeue() ?? 0)  // 4
+print(pq.dequeue() ?? 0)  // 5
+print(pq.dequeue() ?? -1) // -1 nil, без явной подмены возникают ошибки
