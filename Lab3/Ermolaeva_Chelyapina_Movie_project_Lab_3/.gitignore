@@ -1,0 +1,11 @@
+build/
+DerivedData/
+*.xcuserstate
+*.xcuserdatad
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata/
+.DS_Store
+# Local API keys
+Secrets.xcconfig
