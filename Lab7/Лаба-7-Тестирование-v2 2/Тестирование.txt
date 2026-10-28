@@ -1,0 +1,25 @@
+Лабораторная: XCTest и XCUITest
+
+Открыть app.xcodeproj в Xcode, выбрать схему app и iPhone Simulator, нажать ⌘U.
+В схеме подключены appTests (2 unit-теста) и appUITests (2 E2E UI-теста).
+
+Unit, appTests/NewsNetworkTests.swift:
+1. testCreateSendsTrimmedJSONAndReturnsServerArticle — проверяет POST /posts/add, JSON после удаления пробелов, заголовок Content-Type и использование ответа сервера.
+2. testFetchMapsTransportTimeoutToNewsAPIError — проверяет преобразование сетевого тайм-аута в NewsAPIError.timeout.
+
+E2E, appUITests/NewsFeedE2ETests.swift:
+1. testLoadedArticleOpensFullText — запуск, загрузка ленты, выбор новости, проверка заголовка и полного текста.
+2. testRetryLoadsFeedAfterNetworkFailure — ошибка сети при запуске, кнопка повторной загрузки, успешная загрузка и исчезновение кнопки.
+
+UI-тесты используют контролируемые HTTP-ответы вместо внешнего DummyJSON. Проверяются реальные NewsAPIClient, декодирование, ViewModel, SwiftData и интерфейс; доступность внешнего сервера этими тестами не проверяется. Подмена транспорта включается только в Debug аргументом --ui-testing; --fail-first-request даёт одну ошибку, затем успех. Каждый UI-запуск использует новое хранилище в памяти и не меняет пользовательскую базу.
+
+Предыдущие 13 тестов сохранены в Tests/NewsTests.swift для Swift Package Manager. Новые unit-тесты также доступны через swift test.
+
+На машине подготовки нет Xcode/iOS Simulator: UI-тесты не запускались. Проверка синтаксиса Swift и структуры проекта не заменяет прогон на симуляторе.
+
+Результаты проверки 28.10.2026:
+— Синтаксическая проверка изменённых Swift-файлов: успешно.
+— plutil и проверка ссылок схемы на targets: успешно.
+— Полный swift test: заблокирован отсутствием SwiftDataMacros в Command Line Tools.
+— Изолированная сборка сетевого кода: успешно; запуск новых unit-тестов заблокирован отсутствием модуля XCTest.
+— Для фактического запуска всех 4 тестов требуется полный Xcode; успешное выполнение тестов пока не подтверждено.
