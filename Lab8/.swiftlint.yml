@@ -1,0 +1,57 @@
+included:
+  - iOS-final-project
+
+excluded:
+  - iOS-final-project/NewsFeedTests
+  - iOS-final-project/NewsFeedUITests
+  - iOS-final-project/Testing
+
+only_rules:
+  - closure_body_length
+  - closure_spacing
+  - collection_alignment
+  - colon
+  - comma
+  - cyclomatic_complexity
+  - empty_count
+  - empty_string
+  - explicit_init
+  - force_cast
+  - force_try
+  - force_unwrapping
+  - function_body_length
+  - function_parameter_count
+  - identifier_name
+  - line_length
+  - modifier_order
+  - opening_brace
+  - redundant_nil_coalescing
+  - redundant_type_annotation
+  - return_arrow_whitespace
+  - sorted_imports
+  - toggle_bool
+  - trailing_semicolon
+  - trailing_whitespace
+  - type_body_length
+  - type_name
+  - unneeded_parentheses_in_closure_argument
+  - vertical_whitespace
+
+line_length:
+  warning: 120
+  error: 200
+  ignores_comments: true
+
+function_body_length:
+  warning: 50
+  error: 120
+
+closure_body_length:
+  warning: 30
+  error: 100
+
+identifier_name:
+  excluded:
+    - id
+
+reporter: xcode
