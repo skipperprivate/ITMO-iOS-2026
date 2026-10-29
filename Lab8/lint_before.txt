@@ -1,0 +1,11 @@
+SwiftLint — BEFORE
+
+Files checked: 17
+
+Violations: 23
+Serious violations: 0
+
+Main violations:
+- trailing_whitespace
+- sorted_imports
+

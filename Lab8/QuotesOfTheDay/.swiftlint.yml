@@ -1,0 +1,27 @@
+included:
+  - QuotesOfTheDay
+
+opt_in_rules:
+  - empty_count
+  - force_unwrapping
+  - sorted_imports
+  - modifier_order
+  - closure_spacing
+
+line_length:
+  warning: 120
+  error: 160
+
+function_body_length:
+  warning: 50
+  error: 80
+
+type_body_length:
+  warning: 250
+  error: 400
+
+file_length:
+  warning: 400
+  error: 600
+
+reporter: "xcode"
