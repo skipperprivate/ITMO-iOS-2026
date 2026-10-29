@@ -1,0 +1,389 @@
+[
+  {
+    "character" : 1,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/app/ViewModels/NewsEditorViewModel.swift",
+    "line" : 75,
+    "reason" : "Line should be 120 characters or less; currently it has 122 characters",
+    "rule_id" : "line_length",
+    "severity" : "Warning",
+    "type" : "Line Length"
+  },
+  {
+    "character" : 1,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/app/ViewModels/NewsEditorViewModel.swift",
+    "line" : 86,
+    "reason" : "Line should be 120 characters or less; currently it has 168 characters",
+    "rule_id" : "line_length",
+    "severity" : "Warning",
+    "type" : "Line Length"
+  },
+  {
+    "character" : 1,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/app/ViewModels/NewsFeedViewModel.swift",
+    "line" : 53,
+    "reason" : "Line should be 120 characters or less; currently it has 123 characters",
+    "rule_id" : "line_length",
+    "severity" : "Warning",
+    "type" : "Line Length"
+  },
+  {
+    "character" : 9,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/app/ViewModels/NewsFeedViewModel.swift",
+    "line" : 64,
+    "reason" : "Else and catch should be on the same line, one space after the previous declaration",
+    "rule_id" : "statement_position",
+    "severity" : "Warning",
+    "type" : "Statement Position"
+  },
+  {
+    "character" : 66,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/app/App/UITestTransport.swift",
+    "line" : 15,
+    "reason" : "Force unwrapping should be avoided",
+    "rule_id" : "force_unwrapping",
+    "severity" : "Warning",
+    "type" : "Force Unwrapping"
+  },
+  {
+    "character" : 122,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/app/App/UITestTransport.swift",
+    "line" : 15,
+    "reason" : "Force unwrapping should be avoided",
+    "rule_id" : "force_unwrapping",
+    "severity" : "Warning",
+    "type" : "Force Unwrapping"
+  },
+  {
+    "character" : 1,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/app/App/UITestTransport.swift",
+    "line" : 14,
+    "reason" : "Line should be 120 characters or less; currently it has 145 characters",
+    "rule_id" : "line_length",
+    "severity" : "Warning",
+    "type" : "Line Length"
+  },
+  {
+    "character" : 1,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/app/App/UITestTransport.swift",
+    "line" : 15,
+    "reason" : "Line should be 120 characters or less; currently it has 123 characters",
+    "rule_id" : "line_length",
+    "severity" : "Warning",
+    "type" : "Line Length"
+  },
+  {
+    "character" : 9,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/app/Models/Item.swift",
+    "line" : 7,
+    "reason" : "Optional should be implicitly initialized without nil",
+    "rule_id" : "implicit_optional_initialization",
+    "severity" : "Warning",
+    "type" : "Implicit Optional Initialization"
+  },
+  {
+    "character" : 9,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/app/Models/Item.swift",
+    "line" : 8,
+    "reason" : "Optional should be implicitly initialized without nil",
+    "rule_id" : "implicit_optional_initialization",
+    "severity" : "Warning",
+    "type" : "Implicit Optional Initialization"
+  },
+  {
+    "character" : 9,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/app/Models/Item.swift",
+    "line" : 10,
+    "reason" : "Optional should be implicitly initialized without nil",
+    "rule_id" : "implicit_optional_initialization",
+    "severity" : "Warning",
+    "type" : "Implicit Optional Initialization"
+  },
+  {
+    "character" : 9,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/app/Models/Item.swift",
+    "line" : 11,
+    "reason" : "Optional should be implicitly initialized without nil",
+    "rule_id" : "implicit_optional_initialization",
+    "severity" : "Warning",
+    "type" : "Implicit Optional Initialization"
+  },
+  {
+    "character" : 1,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/app/Views/Statistics/NewsStatisticsView.swift",
+    "line" : 12,
+    "reason" : "Line should be 120 characters or less; currently it has 150 characters",
+    "rule_id" : "line_length",
+    "severity" : "Warning",
+    "type" : "Line Length"
+  },
+  {
+    "character" : 1,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/app/Views/Statistics/NewsStatisticsView.swift",
+    "line" : 39,
+    "reason" : "Line should be 120 characters or less; currently it has 186 characters",
+    "rule_id" : "line_length",
+    "severity" : "Warning",
+    "type" : "Line Length"
+  },
+  {
+    "character" : 1,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/app/App/NewsApp.swift",
+    "line" : 18,
+    "reason" : "Line should be 120 characters or less; currently it has 141 characters",
+    "rule_id" : "line_length",
+    "severity" : "Warning",
+    "type" : "Line Length"
+  },
+  {
+    "character" : 1,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/app/App/NewsApp.swift",
+    "line" : 44,
+    "reason" : "Line should be 120 characters or less; currently it has 122 characters",
+    "rule_id" : "line_length",
+    "severity" : "Warning",
+    "type" : "Line Length"
+  },
+  {
+    "character" : 8,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/app/App/NewsApp.swift",
+    "line" : 2,
+    "reason" : "Imports should be sorted",
+    "rule_id" : "sorted_imports",
+    "severity" : "Warning",
+    "type" : "Sorted Imports"
+  },
+  {
+    "character" : 1,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/app/Views/Editor/NewsEditorView.swift",
+    "line" : 41,
+    "reason" : "Line should be 120 characters or less; currently it has 134 characters",
+    "rule_id" : "line_length",
+    "severity" : "Warning",
+    "type" : "Line Length"
+  },
+  {
+    "character" : 1,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/app/Views/Editor/NewsEditorView.swift",
+    "line" : 46,
+    "reason" : "Line should be 200 characters or less; currently it has 216 characters",
+    "rule_id" : "line_length",
+    "severity" : "Error",
+    "type" : "Line Length"
+  },
+  {
+    "character" : 1,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/app/Views/Editor/NewsEditorView.swift",
+    "line" : 89,
+    "reason" : "Line should be 120 characters or less; currently it has 169 characters",
+    "rule_id" : "line_length",
+    "severity" : "Warning",
+    "type" : "Line Length"
+  },
+  {
+    "character" : 21,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/app/Views/Feed/NewsFeedView.swift",
+    "line" : 122,
+    "reason" : "Force tries should be avoided",
+    "rule_id" : "force_try",
+    "severity" : "Error",
+    "type" : "Force Try"
+  },
+  {
+    "character" : 88,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/app/Views/Feed/NewsFeedView.swift",
+    "line" : 124,
+    "reason" : "Force unwrapping should be avoided",
+    "rule_id" : "force_unwrapping",
+    "severity" : "Warning",
+    "type" : "Force Unwrapping"
+  },
+  {
+    "character" : 8,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/app/Views/Feed/NewsFeedView.swift",
+    "line" : 2,
+    "reason" : "Imports should be sorted",
+    "rule_id" : "sorted_imports",
+    "severity" : "Warning",
+    "type" : "Sorted Imports"
+  },
+  {
+    "character" : 66,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/appTests/NewsNetworkTests.swift",
+    "line" : 14,
+    "reason" : "Force unwrapping should be avoided",
+    "rule_id" : "force_unwrapping",
+    "severity" : "Warning",
+    "type" : "Force Unwrapping"
+  },
+  {
+    "character" : 122,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/appTests/NewsNetworkTests.swift",
+    "line" : 14,
+    "reason" : "Force unwrapping should be avoided",
+    "rule_id" : "force_unwrapping",
+    "severity" : "Warning",
+    "type" : "Force Unwrapping"
+  },
+  {
+    "character" : 1,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/appTests/NewsNetworkTests.swift",
+    "line" : 14,
+    "reason" : "Line should be 120 characters or less; currently it has 123 characters",
+    "rule_id" : "line_length",
+    "severity" : "Warning",
+    "type" : "Line Length"
+  },
+  {
+    "character" : 8,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/appTests/NewsNetworkTests.swift",
+    "line" : 2,
+    "reason" : "Imports should be sorted",
+    "rule_id" : "sorted_imports",
+    "severity" : "Warning",
+    "type" : "Sorted Imports"
+  },
+  {
+    "character" : 33,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/app/Services/Persistence/NewsRepository.swift",
+    "line" : 78,
+    "reason" : "Else and catch should be on the same line, one space after the previous declaration",
+    "rule_id" : "statement_position",
+    "severity" : "Warning",
+    "type" : "Statement Position"
+  },
+  {
+    "character" : 51,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/Tests/NewsTests.swift",
+    "line" : 13,
+    "reason" : "Force unwrapping should be avoided",
+    "rule_id" : "force_unwrapping",
+    "severity" : "Warning",
+    "type" : "Force Unwrapping"
+  },
+  {
+    "character" : 66,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/Tests/NewsTests.swift",
+    "line" : 16,
+    "reason" : "Force unwrapping should be avoided",
+    "rule_id" : "force_unwrapping",
+    "severity" : "Warning",
+    "type" : "Force Unwrapping"
+  },
+  {
+    "character" : 125,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/Tests/NewsTests.swift",
+    "line" : 16,
+    "reason" : "Force unwrapping should be avoided",
+    "rule_id" : "force_unwrapping",
+    "severity" : "Warning",
+    "type" : "Force Unwrapping"
+  },
+  {
+    "character" : 1,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/Tests/NewsTests.swift",
+    "line" : 16,
+    "reason" : "Line should be 120 characters or less; currently it has 126 characters",
+    "rule_id" : "line_length",
+    "severity" : "Warning",
+    "type" : "Line Length"
+  },
+  {
+    "character" : 1,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/Tests/NewsTests.swift",
+    "line" : 34,
+    "reason" : "Line should be 200 characters or less; currently it has 236 characters",
+    "rule_id" : "line_length",
+    "severity" : "Error",
+    "type" : "Line Length"
+  },
+  {
+    "character" : 1,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/Tests/NewsTests.swift",
+    "line" : 58,
+    "reason" : "Line should be 120 characters or less; currently it has 123 characters",
+    "rule_id" : "line_length",
+    "severity" : "Warning",
+    "type" : "Line Length"
+  },
+  {
+    "character" : 1,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/Tests/NewsTests.swift",
+    "line" : 72,
+    "reason" : "Line should be 120 characters or less; currently it has 126 characters",
+    "rule_id" : "line_length",
+    "severity" : "Warning",
+    "type" : "Line Length"
+  },
+  {
+    "character" : 1,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/Tests/NewsTests.swift",
+    "line" : 86,
+    "reason" : "Line should be 120 characters or less; currently it has 124 characters",
+    "rule_id" : "line_length",
+    "severity" : "Warning",
+    "type" : "Line Length"
+  },
+  {
+    "character" : 1,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/Tests/NewsTests.swift",
+    "line" : 137,
+    "reason" : "Line should be 120 characters or less; currently it has 156 characters",
+    "rule_id" : "line_length",
+    "severity" : "Warning",
+    "type" : "Line Length"
+  },
+  {
+    "character" : 1,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/Tests/NewsTests.swift",
+    "line" : 144,
+    "reason" : "Line should be 120 characters or less; currently it has 188 characters",
+    "rule_id" : "line_length",
+    "severity" : "Warning",
+    "type" : "Line Length"
+  },
+  {
+    "character" : 8,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/Tests/NewsTests.swift",
+    "line" : 2,
+    "reason" : "Imports should be sorted",
+    "rule_id" : "sorted_imports",
+    "severity" : "Warning",
+    "type" : "Sorted Imports"
+  },
+  {
+    "character" : 18,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/Tests/NewsTests.swift",
+    "line" : 3,
+    "reason" : "Imports should be sorted",
+    "rule_id" : "sorted_imports",
+    "severity" : "Warning",
+    "type" : "Sorted Imports"
+  },
+  {
+    "character" : 83,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/Tests/NewsTests.swift",
+    "line" : 46,
+    "reason" : "Else and catch should be on the same line, one space after the previous declaration",
+    "rule_id" : "statement_position",
+    "severity" : "Warning",
+    "type" : "Statement Position"
+  },
+  {
+    "character" : 80,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/Tests/NewsTests.swift",
+    "line" : 66,
+    "reason" : "Else and catch should be on the same line, one space after the previous declaration",
+    "rule_id" : "statement_position",
+    "severity" : "Warning",
+    "type" : "Statement Position"
+  },
+  {
+    "character" : 73,
+    "file" : "/Users/sofia/Documents/Codex/2026-10-29/new-chat-2/outputs/Лаба-8-SwiftLint/Tests/NewsTests.swift",
+    "line" : 89,
+    "reason" : "Else and catch should be on the same line, one space after the previous declaration",
+    "rule_id" : "statement_position",
+    "severity" : "Warning",
+    "type" : "Statement Position"
+  }
+]

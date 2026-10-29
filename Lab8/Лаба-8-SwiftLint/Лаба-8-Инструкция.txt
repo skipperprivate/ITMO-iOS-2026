@@ -1,0 +1,40 @@
+Лаба 8 — SwiftLint
+
+Основа: Лаба-7-Тестирование-v2. Приложение и все тесты скопированы без изменения Swift-кода.
+
+Как показать работу:
+1. Откройте app.xcodeproj из этой папки в Xcode.
+2. Выберите схему app, нажмите Command+B.
+3. В Build Phases приложения добавлен шаг SwiftLint. Он проверяет приложение и тесты.
+4. Откройте Issue Navigator (Command+5). Нажатие на нарушение ведёт к строке кода.
+5. Сборка остановится на трёх Error от SwiftLint — это ожидаемый результат для сохранённого исходного кода. Чтобы собирать приложение и запускать тесты, сначала исправьте эти нарушения.
+6. Для готового списка откройте Отчёт-SwiftLint.txt; машинный отчёт — Reports/swiftlint.json.
+
+Запуск в Terminal из этой папки:
+sh Scripts/lint.sh
+
+Повторное сохранение отчёта:
+sh Scripts/lint.sh --reporter json > Reports/swiftlint.json
+Код завершения 2 при наличии Error ожидаем, это не сбой установки.
+
+Установка:
+Официальный portable SwiftLint 0.65.1 уже находится в скрытой папке .tools/swiftlint.
+Если он отсутствует, выполните: sh Scripts/install-swiftlint.sh
+Скрипт скачивает закреплённую версию из официального GitHub. Также поддерживается swiftlint из PATH/Homebrew.
+
+Конфигурация: .swiftlint.yml (скрытый файл; в Finder Command+Shift+точка).
+Стандартные правила SwiftLint сохранены. Дополнительно включены:
+• force_unwrapping — выявляет принудительное извлечение Optional через !.
+• empty_count — рекомендует isEmpty вместо сравнения count с нулём.
+• sorted_imports — проверяет порядок import.
+• closure_spacing — проверяет пробелы внутри замыканий.
+• first_where — рекомендует first(where:) вместо filter(...).first.
+• contains_over_filter_count — рекомендует contains вместо подсчёта отфильтрованных элементов.
+Своё правило no_print: запрещает print(...) в app, предлагает Logger.
+Отсутствие нарушений по отдельным правилам означает, что подходящих случаев не найдено.
+
+Настроены пороги line_length (120/200), function_body_length (50/100), type_body_length (300/500).
+Для identifier_name допустимы короткие имена id, x, y.
+
+Для Run Script выключен ENABLE_USER_SCRIPT_SANDBOXING; проверка запускается при каждой сборке и использует --no-cache.
+Конфигурация основана на официальной документации: https://github.com/realm/SwiftLint

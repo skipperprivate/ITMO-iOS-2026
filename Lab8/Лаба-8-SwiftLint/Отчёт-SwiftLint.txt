@@ -1,0 +1,112 @@
+Лаба 8 — результаты SwiftLint
+Дата: 29.10.2026. SwiftLint 0.65.1.
+Проверены 28 Swift-файлов приложения и тестов.
+Результат: 43 нарушения — 40 предупреждений (Warning), 3 ошибки (Error).
+Это результаты статического анализа, а не ошибки выполнения тестов.
+Исходный Swift-код лабы 7 сохранён без изменений для демонстрации.
+
+По правилам:
+line_length: 20
+statement_position: 5
+force_unwrapping: 8
+implicit_optional_initialization: 4
+sorted_imports: 5
+force_try: 1
+
+Полный список (пути относительно папки проекта):
+app/ViewModels/NewsEditorViewModel.swift:75:1 — Warning [line_length]
+Line should be 120 characters or less; currently it has 122 characters
+app/ViewModels/NewsEditorViewModel.swift:86:1 — Warning [line_length]
+Line should be 120 characters or less; currently it has 168 characters
+app/ViewModels/NewsFeedViewModel.swift:53:1 — Warning [line_length]
+Line should be 120 characters or less; currently it has 123 characters
+app/ViewModels/NewsFeedViewModel.swift:64:9 — Warning [statement_position]
+Else and catch should be on the same line, one space after the previous declaration
+app/App/UITestTransport.swift:15:66 — Warning [force_unwrapping]
+Force unwrapping should be avoided
+app/App/UITestTransport.swift:15:122 — Warning [force_unwrapping]
+Force unwrapping should be avoided
+app/App/UITestTransport.swift:14:1 — Warning [line_length]
+Line should be 120 characters or less; currently it has 145 characters
+app/App/UITestTransport.swift:15:1 — Warning [line_length]
+Line should be 120 characters or less; currently it has 123 characters
+app/Models/Item.swift:7:9 — Warning [implicit_optional_initialization]
+Optional should be implicitly initialized without nil
+app/Models/Item.swift:8:9 — Warning [implicit_optional_initialization]
+Optional should be implicitly initialized without nil
+app/Models/Item.swift:10:9 — Warning [implicit_optional_initialization]
+Optional should be implicitly initialized without nil
+app/Models/Item.swift:11:9 — Warning [implicit_optional_initialization]
+Optional should be implicitly initialized without nil
+app/Views/Statistics/NewsStatisticsView.swift:12:1 — Warning [line_length]
+Line should be 120 characters or less; currently it has 150 characters
+app/Views/Statistics/NewsStatisticsView.swift:39:1 — Warning [line_length]
+Line should be 120 characters or less; currently it has 186 characters
+app/App/NewsApp.swift:18:1 — Warning [line_length]
+Line should be 120 characters or less; currently it has 141 characters
+app/App/NewsApp.swift:44:1 — Warning [line_length]
+Line should be 120 characters or less; currently it has 122 characters
+app/App/NewsApp.swift:2:8 — Warning [sorted_imports]
+Imports should be sorted
+app/Views/Editor/NewsEditorView.swift:41:1 — Warning [line_length]
+Line should be 120 characters or less; currently it has 134 characters
+app/Views/Editor/NewsEditorView.swift:46:1 — Error [line_length]
+Line should be 200 characters or less; currently it has 216 characters
+app/Views/Editor/NewsEditorView.swift:89:1 — Warning [line_length]
+Line should be 120 characters or less; currently it has 169 characters
+app/Views/Feed/NewsFeedView.swift:122:21 — Error [force_try]
+Force tries should be avoided
+app/Views/Feed/NewsFeedView.swift:124:88 — Warning [force_unwrapping]
+Force unwrapping should be avoided
+app/Views/Feed/NewsFeedView.swift:2:8 — Warning [sorted_imports]
+Imports should be sorted
+appTests/NewsNetworkTests.swift:14:66 — Warning [force_unwrapping]
+Force unwrapping should be avoided
+appTests/NewsNetworkTests.swift:14:122 — Warning [force_unwrapping]
+Force unwrapping should be avoided
+appTests/NewsNetworkTests.swift:14:1 — Warning [line_length]
+Line should be 120 characters or less; currently it has 123 characters
+appTests/NewsNetworkTests.swift:2:8 — Warning [sorted_imports]
+Imports should be sorted
+app/Services/Persistence/NewsRepository.swift:78:33 — Warning [statement_position]
+Else and catch should be on the same line, one space after the previous declaration
+Tests/NewsTests.swift:13:51 — Warning [force_unwrapping]
+Force unwrapping should be avoided
+Tests/NewsTests.swift:16:66 — Warning [force_unwrapping]
+Force unwrapping should be avoided
+Tests/NewsTests.swift:16:125 — Warning [force_unwrapping]
+Force unwrapping should be avoided
+Tests/NewsTests.swift:16:1 — Warning [line_length]
+Line should be 120 characters or less; currently it has 126 characters
+Tests/NewsTests.swift:34:1 — Error [line_length]
+Line should be 200 characters or less; currently it has 236 characters
+Tests/NewsTests.swift:58:1 — Warning [line_length]
+Line should be 120 characters or less; currently it has 123 characters
+Tests/NewsTests.swift:72:1 — Warning [line_length]
+Line should be 120 characters or less; currently it has 126 characters
+Tests/NewsTests.swift:86:1 — Warning [line_length]
+Line should be 120 characters or less; currently it has 124 characters
+Tests/NewsTests.swift:137:1 — Warning [line_length]
+Line should be 120 characters or less; currently it has 156 characters
+Tests/NewsTests.swift:144:1 — Warning [line_length]
+Line should be 120 characters or less; currently it has 188 characters
+Tests/NewsTests.swift:2:8 — Warning [sorted_imports]
+Imports should be sorted
+Tests/NewsTests.swift:3:18 — Warning [sorted_imports]
+Imports should be sorted
+Tests/NewsTests.swift:46:83 — Warning [statement_position]
+Else and catch should be on the same line, one space after the previous declaration
+Tests/NewsTests.swift:66:80 — Warning [statement_position]
+Else and catch should be on the same line, one space after the previous declaration
+Tests/NewsTests.swift:89:73 — Warning [statement_position]
+Else and catch should be on the same line, one space after the previous declaration
+
+Что исправлять:
+line_length: переносить длинные вызовы и выражения на несколько строк.
+force_unwrapping: заменять ! на guard let / if let; в тестах использовать XCTUnwrap.
+force_try: обрабатывать ошибку через do/catch вместо try!.
+sorted_imports: упорядочивать import по алфавиту.
+statement_position: размещать else/catch на строке с закрывающей скобкой.
+implicit_optional_initialization: убирать избыточное = nil у Optional.
+
+Полная сборка Xcode и UI-тесты здесь не запускались: установлен только Command Line Tools.
