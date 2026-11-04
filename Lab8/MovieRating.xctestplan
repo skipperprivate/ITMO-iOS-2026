@@ -1,0 +1,36 @@
+{
+  "configurations" : [
+    {
+      "id" : "1096D880-A71E-4681-9FD1-8032FF6ABD4D",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "performanceAntipatternCheckerEnabled" : true,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:MovieRating.xcodeproj",
+      "identifier" : "E9BF69AB3065700D003A1011",
+      "name" : "MovieRating"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:MovieRating.xcodeproj",
+        "identifier" : "E9BF69C43065700F003A1011",
+        "name" : "MovieRatingTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:MovieRating.xcodeproj",
+        "identifier" : "E9BF69CE3065700F003A1011",
+        "name" : "MovieRatingUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
