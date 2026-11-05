@@ -1,0 +1,162 @@
+excluded:
+  - RecipesProjectTests
+  - RecipesProjectUITests
+
+# Дополнительные правила.
+opt_in_rules:
+  - force_unwrapping
+  - empty_count
+  - first_where
+  - sorted_first_last
+  - sorted_imports
+  - file_name
+  - let_var_whitespace
+  - closure_end_indentation
+  - closure_spacing
+  - multiline_arguments
+  - multiline_parameters
+  - vertical_parameter_alignment_on_call
+  - conditional_returns_on_newline
+  - empty_string
+  - redundant_nil_coalescing
+  - identical_operands
+  - private_swiftui_state
+  - unhandled_throwing_task
+  - unused_parameter
+  - xct_specific_matcher
+  - contains_over_filter_count
+  - contains_over_filter_is_empty
+  - contains_over_first_not_nil
+  - operator_usage_whitespace
+  - redundant_type_annotation
+  - accessibility_label_for_image
+
+# Принудительное извлечение optional через !.
+force_unwrapping:
+  severity: warning
+
+# try! и as! могут привести к аварийному завершению.
+force_try:
+  severity: warning
+
+force_cast:
+  severity: warning
+
+# Для проверки пустоты лучше использовать isEmpty вместо count == 0.
+empty_count:
+  severity: warning
+
+# Поиск первого подходящего элемента без создания лишнего массива.
+first_where:
+  severity: warning
+
+# Поиск минимума или максимума без полной сортировки массива.
+sorted_first_last:
+  severity: warning
+
+# Замечания к оформлению кода.
+colon:
+  severity: warning
+
+trailing_semicolon:
+  severity: warning
+
+trailing_whitespace:
+  severity: warning
+
+# Предупреждения о длинных строках и больших функциях.
+line_length:
+  warning: 120
+  error: 1000
+
+function_body_length:
+  warning: 40
+  error: 1000
+
+# Единый порядок импортов.
+sorted_imports:
+  severity: warning
+
+# Соответствие имени файла объявленным типам.
+file_name:
+  severity: warning
+
+# Разделение свойств и методов пустыми строками.
+let_var_whitespace:
+  severity: warning
+
+# Отступ закрывающей скобки замыкания.
+closure_end_indentation:
+  severity: warning
+
+# Пробелы внутри замыканий.
+closure_spacing:
+  severity: warning
+
+# Оформление аргументов многострочных вызовов.
+multiline_arguments:
+  severity: warning
+
+# Оформление параметров многострочных функций.
+multiline_parameters:
+  severity: warning
+
+# Выравнивание аргументов вызова.
+vertical_parameter_alignment_on_call:
+  severity: warning
+
+# Возврат из условия на отдельной строке.
+conditional_returns_on_newline:
+  severity: warning
+
+# Проверка пустой строки через isEmpty.
+empty_string:
+  severity: warning
+
+# Лишняя подстановка nil.
+redundant_nil_coalescing:
+  severity: warning
+
+# Одинаковые операнды в выражении.
+identical_operands:
+  severity: warning
+
+# Ограничение доступа к внутреннему состоянию SwiftUI.
+private_swiftui_state:
+  severity: warning
+
+# Потерянные ошибки в асинхронных задачах.
+unhandled_throwing_task:
+  severity: warning
+
+# Неиспользуемые параметры.
+unused_parameter:
+  severity: warning
+
+# Более точные проверки XCTest.
+xct_specific_matcher:
+  severity: warning
+
+# Поиск наличия элемента без подсчёта отфильтрованного массива.
+contains_over_filter_count:
+  severity: warning
+
+# Проверка наличия элемента без создания лишнего массива.
+contains_over_filter_is_empty:
+  severity: warning
+
+# Проверка наличия через contains.
+contains_over_first_not_nil:
+  severity: warning
+
+# Пробелы около операторов.
+operator_usage_whitespace:
+  severity: warning
+
+# Избыточное указание очевидного типа.
+redundant_type_annotation:
+  severity: warning
+
+# Доступное название изображения для VoiceOver.
+accessibility_label_for_image:
+  severity: warning
