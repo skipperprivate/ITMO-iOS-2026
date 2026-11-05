@@ -1,0 +1,40 @@
+# .swiftlint.yml
+
+included:
+    - QuoteApp
+ 
+excluded:
+    - Pods
+    - DerivedData
+    - .build
+    - Tests
+    
+disabled_rules:
+    - trailing_whitespace # Пробелы в конце строк
+
+opt_in_rules:
+    - empty_count # Использование isEmpty вместо == 0
+    - force_unwrapping # Принудительное извлечение
+    - redundant_nil_coalescing # Избыточность проверки на nil
+    - explicit_init # Запрет на явный вызов .init
+    - closure_spacing # Пробел перед `}`
+    
+line_length:
+    warning: 120
+    error: 150
+    ignores_comments: true
+
+function_body_length:
+    warning: 60
+    error: 100
+    
+file_length:
+    warning: 400
+    error: 600
+    
+identifier_name:
+    min_length: 3
+    max_length: 40
+    excluded:
+        - id
+        - ms
