@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme LastUpgradeVersion="2710" version="1.3">
+  <BuildAction parallelizeBuildables="YES" buildImplicitDependencies="YES">
+    <BuildActionEntries>
+      <BuildActionEntry buildForTesting="YES" buildForRunning="YES" buildForProfiling="YES" buildForArchiving="YES" buildForAnalyzing="YES">
+        <BuildableReference BuildableIdentifier="primary" BlueprintIdentifier="23E0DCC330768CE800A6E501" BuildableName="RecipesProject.app" BlueprintName="RecipesProject" ReferencedContainer="container:RecipesProject.xcodeproj"/>
+      </BuildActionEntry>
+      <BuildActionEntry buildForTesting="YES" buildForRunning="NO" buildForProfiling="NO" buildForArchiving="NO" buildForAnalyzing="NO">
+        <BuildableReference BuildableIdentifier="primary" BlueprintIdentifier="23E0DCD030768CEB00A6E501" BuildableName="RecipesProjectTests.xctest" BlueprintName="RecipesProjectTests" ReferencedContainer="container:RecipesProject.xcodeproj"/>
+      </BuildActionEntry>
+      <BuildActionEntry buildForTesting="YES" buildForRunning="NO" buildForProfiling="NO" buildForArchiving="NO" buildForAnalyzing="NO">
+        <BuildableReference BuildableIdentifier="primary" BlueprintIdentifier="23E0DCDA30768CEB00A6E501" BuildableName="RecipesProjectUITests.xctest" BlueprintName="RecipesProjectUITests" ReferencedContainer="container:RecipesProject.xcodeproj"/>
+      </BuildActionEntry>
+    </BuildActionEntries>
+  </BuildAction>
+  <!-- Тесты запускаются последовательно, без подключения отладчика. -->
+  <TestAction buildConfiguration="Debug" selectedDebuggerIdentifier="" selectedLauncherIdentifier="Xcode.IDEFoundation.Launcher.PosixSpawn" shouldUseLaunchSchemeArgsEnv="YES" shouldAutocreateTestPlan="NO">
+    <Testables>
+      <TestableReference skipped="NO" parallelizable="NO">
+        <BuildableReference BuildableIdentifier="primary" BlueprintIdentifier="23E0DCD030768CEB00A6E501" BuildableName="RecipesProjectTests.xctest" BlueprintName="RecipesProjectTests" ReferencedContainer="container:RecipesProject.xcodeproj"/>
+      </TestableReference>
+      <TestableReference skipped="NO" parallelizable="NO">
+        <BuildableReference BuildableIdentifier="primary" BlueprintIdentifier="23E0DCDA30768CEB00A6E501" BuildableName="RecipesProjectUITests.xctest" BlueprintName="RecipesProjectUITests" ReferencedContainer="container:RecipesProject.xcodeproj"/>
+      </TestableReference>
+    </Testables>
+    <MacroExpansion><BuildableReference BuildableIdentifier="primary" BlueprintIdentifier="23E0DCC330768CE800A6E501" BuildableName="RecipesProject.app" BlueprintName="RecipesProject" ReferencedContainer="container:RecipesProject.xcodeproj"/></MacroExpansion>
+  </TestAction>
+  <LaunchAction buildConfiguration="Debug" selectedDebuggerIdentifier="Xcode.DebuggerFoundation.Debugger.LLDB" selectedLauncherIdentifier="Xcode.IDEFoundation.Launcher.LLDB" launchStyle="0" useCustomWorkingDirectory="NO" ignoresPersistentStateOnLaunch="NO" debugDocumentVersioning="YES" debugServiceExtension="internal" allowLocationSimulation="YES">
+    <BuildableProductRunnable runnableDebuggingMode="0"><BuildableReference BuildableIdentifier="primary" BlueprintIdentifier="23E0DCC330768CE800A6E501" BuildableName="RecipesProject.app" BlueprintName="RecipesProject" ReferencedContainer="container:RecipesProject.xcodeproj"/></BuildableProductRunnable>
+  </LaunchAction>
+  <ProfileAction buildConfiguration="Release" shouldUseLaunchSchemeArgsEnv="YES" savedToolIdentifier="" useCustomWorkingDirectory="NO" debugDocumentVersioning="YES">
+    <BuildableProductRunnable runnableDebuggingMode="0"><BuildableReference BuildableIdentifier="primary" BlueprintIdentifier="23E0DCC330768CE800A6E501" BuildableName="RecipesProject.app" BlueprintName="RecipesProject" ReferencedContainer="container:RecipesProject.xcodeproj"/></BuildableProductRunnable>
+  </ProfileAction>
+  <AnalyzeAction buildConfiguration="Debug"/>
+  <ArchiveAction buildConfiguration="Release" revealArchiveInOrganizer="YES"/>
+</Scheme>

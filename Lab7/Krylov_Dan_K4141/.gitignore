@@ -1,0 +1,9 @@
+# Личные настройки Xcode и macOS
+.DS_Store
+xcuserdata/
+*.xcuserstate
+
+# Результаты сборки и тестирования
+DerivedData/
+build/
+*.xcresult
