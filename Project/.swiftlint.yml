@@ -1,0 +1,156 @@
+excluded:
+  - Pods
+  - Carthage
+  - .build
+  - DerivedData
+  - MovieRatingTests
+  - MovieRatingUITests
+
+disabled_rules:
+  - trailing_whitespace
+  - vertical_whitespace
+  - opening_brace
+  - function_body_length
+  - type_body_length
+  - file_length
+
+opt_in_rules:
+  # Безопасность
+  - force_unwrapping
+  - implicitly_unwrapped_optional
+  - fatal_error_message
+  - unowned_variable_capture
+  - unhandled_throwing_task
+  - incompatible_concurrency_annotation
+  - discarded_notification_center_observer
+
+  # Архитектура
+  - discouraged_optional_boolean
+  - discouraged_optional_collection
+  - convenience_type
+  - lower_acl_than_parent
+  - function_default_parameter_at_end
+  - explicit_top_level_acl
+  - one_declaration_per_file
+  - file_types_order
+  - no_empty_block
+  - variable_shadowing
+  - prohibited_interface_builder
+  - strict_fileprivate
+
+  # Сложность и качество
+  - closure_body_length
+  - unused_parameter
+  - redundant_nil_coalescing
+  - identical_operands
+  - superfluous_else
+  - yoda_condition
+  - no_magic_numbers
+  - redundant_type_annotation
+  - unneeded_throws_rethrows
+  - unneeded_escaping
+  - prefer_condition_list
+  - direct_return
+  - prefer_self_type_over_type_of_self
+
+  # Коллекции
+  - empty_count
+  - empty_string
+  - contains_over_filter_count
+  - contains_over_filter_is_empty
+  - first_where
+  - reduce_into
+  - sorted_first_last
+  - prefer_key_path
+  - last_where
+  - array_init
+
+  # Enum и типобезопасность
+  - optional_enum_case_matching
+  - raw_value_for_camel_cased_codable_enum
+  - sorted_enum_cases
+  - explicit_enum_raw_value
+
+  # UIKit
+  - accessibility_label_for_image
+  - accessibility_trait_for_button
+  - weak_delegate
+  - private_action
+  - private_outlet
+
+  # Организация кода
+  - sorted_imports
+  - file_name_no_space
+  - modifier_order
+  - enum_case_associated_values_count
+
+line_length:
+  warning: 120
+  error: 160
+  ignores_comments: true
+  ignores_urls: true
+
+identifier_name:
+  min_length:
+    warning: 2
+  max_length:
+    warning: 50
+  excluded:
+    - id
+    - i
+    - x
+    - y
+    - url
+    - dto
+
+cyclomatic_complexity:
+  warning: 8
+  error: 12
+
+nesting:
+  type_level:
+    warning: 2
+    error: 3
+  function_level:
+    warning: 3
+    error: 5
+
+closure_body_length:
+  warning: 25
+  error: 45
+
+function_parameter_count:
+  warning: 5
+  error: 8
+
+large_tuple:
+  warning: 3
+  error: 4
+
+type_name:
+  min_length: 3
+  max_length:
+    warning: 50
+    error: 60
+
+custom_rules:
+
+  no_print_in_production:
+    name: "No Print in Production"
+    regex: '\bprint\s*\('
+    message: "Используй Logger вместо print()."
+    severity: warning
+
+  no_direct_urlsession_in_presenter:
+    name: "No URLSession in Presenter"
+    regex: '\bURLSession\s*(?:\.|[(])'
+    included:
+      - ".*Presenter\\.swift$"
+    message: "Presenter должен использовать Service, а не URLSession."
+    severity: error
+
+  no_thread_sleep:
+    name: "No Thread Sleep"
+    regex: '\bThread\.sleep\s*\('
+    message: "Thread.sleep блокирует поток."
+    severity: error
