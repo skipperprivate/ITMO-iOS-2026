@@ -2,6 +2,8 @@ import Foundation
 import SwiftData
 
 // Одна публикация, в SwiftData сохраняется её между запусками.
+// Явные значения по умолчанию сохраняем для модели SwiftData.
+// swiftlint:disable implicit_optional_initialization
 @Model
 final class Item {
     var serverPostID: Int? = nil
@@ -28,3 +30,4 @@ final class Item {
         self.category = category
     }
 }
+// swiftlint:enable implicit_optional_initialization

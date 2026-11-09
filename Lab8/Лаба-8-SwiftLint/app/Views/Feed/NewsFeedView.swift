@@ -1,5 +1,5 @@
-import SwiftUI
 import SwiftData
+import SwiftUI
 
 struct NewsFeedView: View {
     @Environment(SettingsViewModel.self) private var settings
@@ -118,9 +118,12 @@ struct NewsFeedView: View {
 
 }
 
+// Только демонстрационные данные Xcode Preview; не код запуска приложения.
+// swiftlint:disable force_try force_unwrapping
 #Preview {
     let container = try! ModelContainer(for: Item.self, configurations: ModelConfiguration(isStoredInMemoryOnly: true))
     NewsFeedView(repository: NewsRepository(context: container.mainContext))
         .environment(SettingsViewModel(defaults: UserDefaults(suiteName: "NewsPreview")!))
         .modelContainer(container)
 }
+// swiftlint:enable force_try force_unwrapping

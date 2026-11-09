@@ -1,6 +1,6 @@
-import XCTest
-import SwiftData
 @testable import NewsLabCore
+import SwiftData
+import XCTest
 
 private struct StubTransport: HTTPTransport {
     let status: Int
@@ -10,10 +10,14 @@ private struct StubTransport: HTTPTransport {
         XCTAssertEqual(request.url?.host, "dummyjson.com")
         XCTAssertEqual(request.url?.scheme, "https")
         XCTAssertEqual(request.url?.path, "/posts")
-        let query = URLComponents(url: request.url!, resolvingAgainstBaseURL: false)?.queryItems
+        let url = try XCTUnwrap(request.url)
+        let query = URLComponents(url: url, resolvingAgainstBaseURL: false)?.queryItems
         XCTAssertEqual(query?.first(where: { $0.name == "limit" })?.value, "30")
         XCTAssertEqual(request.value(forHTTPHeaderField: "Accept"), "application/json")
-        return (Data(body.utf8), HTTPURLResponse(url: request.url!, statusCode: status, httpVersion: nil, headerFields: nil)!)
+        let response = try XCTUnwrap(HTTPURLResponse(
+            url: url, statusCode: status, httpVersion: nil, headerFields: nil
+        ))
+        return (Data(body.utf8), response)
     }
 }
 
@@ -43,8 +47,7 @@ final class NewsTests: XCTestCase {
         do {
             _ = try await NewsAPIClient(transport: StubTransport(status: 503, body: "unavailable")).fetchArticles()
             XCTFail("Expected HTTP error")
-        } catch NewsAPIError.httpStatus(let status) { XCTAssertEqual(status, 503) }
-        catch { XCTFail("Unexpected: \(error)") }
+        } catch NewsAPIError.httpStatus(let status) { XCTAssertEqual(status, 503) } catch { XCTFail("Unexpected: \(error)") }
     }
 
     func testMalformedJSON() async {
@@ -63,8 +66,7 @@ final class NewsTests: XCTestCase {
         do {
             _ = try await NewsAPIClient(transport: CancelledTransport()).fetchArticles()
             XCTFail("Expected cancellation")
-        } catch let error as URLError { XCTAssertEqual(error.code, .cancelled) }
-        catch { XCTFail("Unexpected: \(error)") }
+        } catch let error as URLError { XCTAssertEqual(error.code, .cancelled) } catch { XCTFail("Unexpected: \(error)") }
     }
 
     func testStatisticsCountsUnicodeAndWhitespace() async throws {
@@ -86,8 +88,7 @@ final class NewsTests: XCTestCase {
             return try await NewsStatisticsService().calculate(texts: [String(repeating: "word ", count: 100_000)]) { _ in }
         }
         task.cancel()
-        do { _ = try await task.value; XCTFail("Expected cancellation") }
-        catch is CancellationError {} catch { XCTFail("Unexpected: \(error)") }
+        do { _ = try await task.value; XCTFail("Expected cancellation") } catch is CancellationError {} catch { XCTFail("Unexpected: \(error)") }
     }
 
     private func container() throws -> ModelContainer {

@@ -75,8 +75,7 @@ final class NewsRepository {
     }
 
     private func commit() throws {
-        do { try context.save() }
-        catch {
+        do { try context.save() } catch {
             context.rollback()
             throw error
         }

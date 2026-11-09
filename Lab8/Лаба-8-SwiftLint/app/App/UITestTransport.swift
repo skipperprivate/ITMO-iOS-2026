@@ -12,7 +12,11 @@ actor UITestTransport: HTTPTransport {
             throw URLError(.notConnectedToInternet)
         }
         let json = #"{"posts":[{"id":101,"title":"Тестовая новость","body":"Полный текст тестовой новости.","userId":1,"tags":["technology"]}]}"#
-        return (Data(json.utf8), HTTPURLResponse(url: request.url!, statusCode: 200, httpVersion: nil, headerFields: nil)!)
+        guard let url = request.url,
+              let response = HTTPURLResponse(url: url, statusCode: 200, httpVersion: nil, headerFields: nil) else {
+            throw URLError(.badURL)
+        }
+        return (Data(json.utf8), response)
     }
 }
 #endif

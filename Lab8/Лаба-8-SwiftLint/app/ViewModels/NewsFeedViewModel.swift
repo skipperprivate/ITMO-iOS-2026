@@ -61,8 +61,7 @@ final class NewsFeedViewModel {
         do {
             items = try repository.fetch()
             prepareStatistics()
-        }
-        catch { errorMessage = error.localizedDescription }
+        } catch { errorMessage = error.localizedDescription }
     }
 
     func delete(offsets: IndexSet) {

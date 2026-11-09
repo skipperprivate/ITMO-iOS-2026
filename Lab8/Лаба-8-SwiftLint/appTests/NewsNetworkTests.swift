@@ -1,5 +1,5 @@
-import XCTest
 import Foundation
+import XCTest
 #if SWIFT_PACKAGE
 @testable import NewsLabCore
 #else
@@ -11,7 +11,11 @@ private actor RecordingTransport: HTTPTransport {
     func data(for request: URLRequest) async throws -> (Data, URLResponse) {
         self.request = request
         let json = #"{"id":251,"title":"Server title","body":"Server body","userId":7}"#
-        return (Data(json.utf8), HTTPURLResponse(url: request.url!, statusCode: 201, httpVersion: nil, headerFields: nil)!)
+        let url = try XCTUnwrap(request.url)
+        let response = try XCTUnwrap(HTTPURLResponse(
+            url: url, statusCode: 201, httpVersion: nil, headerFields: nil
+        ))
+        return (Data(json.utf8), response)
     }
 }
 
