@@ -79,81 +79,12 @@ final class FileNoteContentRepositoryTests: XCTestCase {
         }
     }
 
-    func testLegacyTextFileIsStillReadable() async throws {
+    func testEmptyMarkdownReturnsEmptyText() async throws {
         let noteID = UUID()
-        let legacy = try writeFile(Data("Старый конспект".utf8), noteID: noteID, format: "txt")
-
-        let loaded = try await repository.load(noteID: noteID)
-
-        XCTAssertEqual(loaded, "Старый конспект")
-        XCTAssertTrue(FileManager.default.fileExists(atPath: legacy.path))
-    }
-
-    func testSaveMigratesLegacyFileAfterWritingMarkdown() async throws {
-        let noteID = UUID()
-        let legacy = try writeFile(Data("Старый текст".utf8), noteID: noteID, format: "txt")
-
-        try await repository.save("# Обновлённый конспект", noteID: noteID)
-
-        let markdown = directory.appendingPathComponent(noteID.uuidString).appendingPathExtension("md")
-        XCTAssertEqual(try String(contentsOf: markdown, encoding: .utf8), "# Обновлённый конспект")
-        XCTAssertFalse(FileManager.default.fileExists(atPath: legacy.path))
-    }
-
-    func testEmptyMarkdownTakesPriorityOverLegacyText() async throws {
-        let noteID = UUID()
-        _ = try writeFile(Data("Старый текст".utf8), noteID: noteID, format: "txt")
-        _ = try writeFile(Data(), noteID: noteID, format: "md")
+        try await repository.save("", noteID: noteID)
 
         let loaded = try await repository.load(noteID: noteID)
 
         XCTAssertEqual(loaded, "")
     }
-
-    func testInvalidMarkdownDoesNotFallBackToLegacyFile() async throws {
-        let noteID = UUID()
-        _ = try writeFile(Data("Старый текст".utf8), noteID: noteID, format: "txt")
-        _ = try writeFile(Data([0xFF, 0xFF]), noteID: noteID, format: "md")
-
-        do {
-            _ = try await repository.load(noteID: noteID)
-            XCTFail("Ошибка чтения Markdown не должна скрываться старым текстом")
-        } catch {
-            XCTAssertTrue(error is CocoaError)
-        }
-    }
-
-    func testFailedMigrationPreservesLegacyFile() async throws {
-        let noteID = UUID()
-        let legacy = try writeFile(Data("Старый текст".utf8), noteID: noteID, format: "txt")
-        let markdown = directory.appendingPathComponent(noteID.uuidString).appendingPathExtension("md")
-        // Директория вместо файла заставляет запись завершиться ошибкой.
-        try FileManager.default.createDirectory(at: markdown, withIntermediateDirectories: true)
-
-        do {
-            try await repository.save("Новый текст", noteID: noteID)
-            XCTFail("Ожидалась ошибка записи")
-        } catch {
-            XCTAssertEqual(try String(contentsOf: legacy, encoding: .utf8), "Старый текст")
-        }
-    }
-
-    func testDeleteRemovesMarkdownAndLegacyFiles() async throws {
-        let noteID = UUID()
-        let legacy = try writeFile(Data("Старый текст".utf8), noteID: noteID, format: "txt")
-        let markdown = try writeFile(Data("# Новый текст".utf8), noteID: noteID, format: "md")
-
-        try await repository.delete(noteIDs: [noteID])
-
-        XCTAssertFalse(FileManager.default.fileExists(atPath: legacy.path))
-        XCTAssertFalse(FileManager.default.fileExists(atPath: markdown.path))
-    }
-
-    private func writeFile(_ data: Data, noteID: UUID, format: String) throws -> URL {
-        try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
-        let url = directory.appendingPathComponent(noteID.uuidString).appendingPathExtension(format)
-        try data.write(to: url)
-        return url
-    }
-
 }

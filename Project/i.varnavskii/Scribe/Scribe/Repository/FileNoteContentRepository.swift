@@ -16,23 +16,17 @@ actor FileNoteContentRepository: NoteContentRepository {
     }
 
     func load(noteID: UUID) throws -> String {
-        // Новый формат имеет приоритет, даже если в нём пустой текст.
-        try readTextIfPresent(at: fileURL(noteID, format: "md"))
-            ?? readTextIfPresent(at: fileURL(noteID, format: "txt"))
-            ?? ""
+        try readTextIfPresent(at: fileURL(noteID)) ?? ""
     }
 
     func save(_ text: String, noteID: UUID) throws {
         try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
-        // Старый файл удаляем только после успешной атомарной записи Markdown.
-        try text.write(to: fileURL(noteID, format: "md"), atomically: true, encoding: .utf8)
-        try removeFileIfPresent(at: fileURL(noteID, format: "txt"))
+        try text.write(to: fileURL(noteID), atomically: true, encoding: .utf8)
     }
 
     func delete(noteIDs: [UUID]) throws {
         for noteID in noteIDs {
-            try removeFileIfPresent(at: fileURL(noteID, format: "md"))
-            try removeFileIfPresent(at: fileURL(noteID, format: "txt"))
+            try removeFileIfPresent(at: fileURL(noteID))
         }
     }
 
@@ -52,7 +46,7 @@ actor FileNoteContentRepository: NoteContentRepository {
         }
     }
 
-    private func fileURL(_ noteID: UUID, format: String) -> URL {
-        directory.appendingPathComponent(noteID.uuidString).appendingPathExtension(format)
+    private func fileURL(_ noteID: UUID) -> URL {
+        directory.appendingPathComponent(noteID.uuidString).appendingPathExtension("md")
     }
 }

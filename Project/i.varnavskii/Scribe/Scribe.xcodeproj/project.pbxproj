@@ -227,17 +227,18 @@
 		8E561492B0E94110A07C1001 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
 			name = SwiftLint;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export PATH=\"/opt/homebrew/bin:/usr/local/bin:$PATH\"\ncd \"$SRCROOT\" || exit 1\nif command -v swiftlint >/dev/null 2>&1; then\n    swiftlint lint --config \"$SRCROOT/.swiftlint.yml\" --no-cache\nelse\n    echo \"warning: SwiftLint не установлен. Выполните: brew install swiftlint\"\nfi\n";
+			shellScript = (
+				"export PATH=\"/opt/homebrew/bin:/usr/local/bin:$PATH\"",
+				"cd \"$SRCROOT\" || exit 1",
+				"if command -v swiftlint >/dev/null 2>&1; then",
+				"    swiftlint lint --config \"$SRCROOT/.swiftlint.yml\" --no-cache",
+				"else",
+				"    echo \"warning: SwiftLint не установлен. Выполните: brew install swiftlint\"",
+				"fi",
+				"",
+			);
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -271,25 +272,6 @@
 			targetProxy = 63F10A2F306E84F100D00148 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		A31850D2B38C4006A6DA1003 /* XCRemoteSwiftPackageReference "textual" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/gonzalezreal/textual";
-			requirement = {
-				kind = exactVersion;
-				version = 0.5.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		A31850D2B38C4006A6DA1002 /* Textual */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A31850D2B38C4006A6DA1003 /* XCRemoteSwiftPackageReference "textual" */;
-			productName = Textual;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCBuildConfiguration section */
 		63F10A34306E84F100D00148 /* Debug configuration for PBXProject "Scribe" */ = {
@@ -591,6 +573,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A31850D2B38C4006A6DA1003 /* XCRemoteSwiftPackageReference "textual" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gonzalezreal/textual";
+			requirement = {
+				kind = exactVersion;
+				version = 0.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A31850D2B38C4006A6DA1002 /* Textual */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A31850D2B38C4006A6DA1003 /* XCRemoteSwiftPackageReference "textual" */;
+			productName = Textual;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 63F10A0F306E84F000D00148 /* Project object */;
 	validationLevel = 1;
