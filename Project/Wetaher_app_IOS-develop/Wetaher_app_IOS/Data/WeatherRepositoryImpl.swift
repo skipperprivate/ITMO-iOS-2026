@@ -1,0 +1,78 @@
+//
+//  WeatherRepositoryImpl.swift
+//  Wetaher_app_IOS
+//
+//  Created by Roman Zyuzin on 02.10.2026.
+//
+import Foundation
+
+@MainActor
+public final class WeatherRepositoryImpl: WeatherRepository {
+
+    private let networkClient: NetworkClient
+    private let weatherStore: WeatherStore?
+    private let preferences: UserPreferencesStoring
+
+    public init(
+        networkClient: NetworkClient = NetworkClient(),
+        weatherStore: WeatherStore? = nil,
+        preferences: UserPreferencesStoring = UserPreferencesStore()
+    ) {
+        self.networkClient = networkClient
+        self.weatherStore = weatherStore ?? .shared
+        self.preferences = preferences
+    }
+
+    // Если сеть недоступна, возвращаем последний сохранённый снимок города
+    // Если кэша нет — исходную сетевую ошибку
+    public func GetWeatherForSelectedCity(for city: City) async -> Result<WeatherSnapshot, WeatherErrorResponse> {
+
+        // Требуется заменить написания городов через тире на пробелы (API понимает только " " и "_")
+        let cityInRightFormat = City(
+            id: city.id,
+            name: city.name.replacingOccurrences(of: "_", with: " "),
+            country: city.country,
+            latitude: city.latitude,
+            longitude: city.longitude,
+            timezone: city.timezone,
+            localTime: city.localTime
+        )
+
+        let response = await networkClient.getCityWeather(city: cityInRightFormat)
+        switch(response){
+        case .success(let weatherResponse):
+            let entity = weatherResponse.toEntity(city: city)
+            do {
+                try weatherStore?.save(entity)
+            } catch {
+                // Неудачная запись кэша не должна ломать показ свежих данных
+                #if DEBUG
+                print("WeatherStore save error: \(error)")
+                #endif
+            }
+
+            return .success(WeatherSnapshot(entity: entity, source: .network))
+
+        case .failure(let weatherErrorResponse):
+            // Сеть недоступна — пробуем показать последний сохранённый снимок
+            if let cached = (try? weatherStore?.fetch(cityID: city.id)) ?? nil {
+                return .success(WeatherSnapshot(entity: cached, source: .cache))
+            }
+
+            return .failure(weatherErrorResponse)
+        }
+    }
+    
+    public func DeleteWeatherForDeletedCity(cityID: Int) -> Bool {
+        // Прогноз удалённого города больше не нужен — чистим его из БД
+        do {
+            try weatherStore?.delete(cityID: cityID)
+            return true
+        } catch {
+            #if DEBUG
+            print("WeatherStore delete error: \(error)")
+            #endif
+            return false
+        }
+    }
+}

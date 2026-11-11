@@ -1,0 +1,35 @@
+excluded:
+  - Pods
+  - Carthage
+  - Generated
+  - .build
+  - DerivedData
+  - Tests
+  - "*Tests"
+  - "*TestsUI"
+
+opt_in_rules:
+  - empty_count
+  - empty_string
+  - closure_end_indentation
+  - closure_spacing
+  
+disabled_rules:
+  - trailing_whitespace
+  - line_length
+  - type_name
+  - identifier_name
+  
+file_length:
+  warning: 300
+
+function_parameter_count:
+  warning: 5
+  
+function_body_length:
+  warning: 40
+
+type_name:
+  min_length: 3
+  max_length:
+    warning: 40

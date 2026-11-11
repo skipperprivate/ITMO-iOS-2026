@@ -1,0 +1,52 @@
+struct Order {
+  let id: Int
+  let customer: String
+  let amount: Double // сумма заказа
+  let isPaid: Bool
+  let promoCode: String? // может отсутствовать
+}
+
+let orders: [Order] = [
+Order(id: 1, customer: "Анна", amount: 1200, isPaid: true, promoCode: "SALE10"),
+Order(id: 2, customer: "Иван", amount: 800, isPaid: false, promoCode: nil),
+Order(id: 3, customer: "Анна", amount: 5400, isPaid: true, promoCode: nil),
+Order(id: 4, customer: "Олег", amount: 300, isPaid: true, promoCode: "NEW"),
+Order(id: 5, customer: "Иван", amount: 2100, isPaid: false, promoCode: "SALE10")
+]
+
+/*
+Получить массив сумм всех оплаченных заказов.
+
+Найти общую сумму всех неоплаченных заказов (reduce).
+
+Получить список уникальных имён клиентов, отсортированный по алфавиту.
+
+Получить массив промокодов, исключив nil (compactMap).
+
+Сгруппировать заказы по имени клиента в словарь [String: [Order]] (через Dictionary(grouping:by:)).
+
+Найти клиента с максимальной суммарной оплаченной суммой.
+*/
+
+let answ1 = orders.filter{ $0.isPaid }.map{ $0.amount }
+print(answ1)
+// $0 - первый аргумент в функции (замена имени)
+
+let answ2 = orders.filter{ !$0.isPaid }.map{ $0.amount }.reduce(0.0, { (result: Double, value: Double) -> Double in return result + value})
+print(answ2)
+
+let answ3 = Array(Set(orders.map{ $0.customer })).sorted()
+print(answ3)
+
+let answ4 = orders.compactMap { $0.promoCode }
+print(answ4)
+
+let answ5 = Dictionary(grouping: orders) { $0.customer } 
+print(answ5)
+
+let allPaid = Dictionary(grouping: orders.filter{ $0.isPaid }) { $0.customer } 
+let allPaidSum = allPaid.mapValues { $0.map{ $0.amount }.reduce(0.0, { (result: Double, value: Double) -> Double in return result + value})}
+let answ6 = allPaidSum.max { $0.value < $1.value }?.key ?? ""
+// ?.key на случай если не найден кортеж, удовлетворяющий max
+// ?? "" подставляет "" в случае nil
+print(answ6)

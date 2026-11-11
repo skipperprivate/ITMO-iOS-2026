@@ -1,0 +1,79 @@
+//
+//  WeatherSuccess.swift
+//  Wetaher_app_IOS
+//
+//  Created by Roman Zyuzin on 03.10.2026.
+//
+
+import SwiftUI
+
+public struct WeatherSuccess: View {
+
+    public var currentForecast: ForecastUI
+    public var isFromCache: Bool
+    public var cacheAgeDescription: String?
+    public let onPullToRefresh: () -> Void
+
+    @Binding public var showSettingsSheet: Bool
+    @Binding public var showCityListSheet: Bool
+
+    public init(
+        currentForecast: ForecastUI,
+        isFromCache: Bool = false,
+        cacheAgeDescription: String? = nil,
+        showSettingsSheet: Binding<Bool>,
+        showCityListSheet: Binding<Bool>,
+        onPullToRefresh: @escaping () -> Void
+    ) {
+        self.currentForecast = currentForecast
+        self.isFromCache = isFromCache
+        self.cacheAgeDescription = cacheAgeDescription
+        self._showSettingsSheet = showSettingsSheet
+        self._showCityListSheet = showCityListSheet
+        self.onPullToRefresh = onPullToRefresh
+    }
+
+    public var body: some View {
+        VStack(spacing: BaseNumeral.defaultSpacing) {
+            // Верхняя панель управления
+            HStack {
+                Button {
+                    showSettingsSheet = true
+                } label: {
+                    Image(systemName: "gearshape")
+                        .font(.body)
+                        .foregroundStyle(Colors.primaryText)
+                        .padding(BaseNumeral.iconButtonPadding)
+                        .background(Colors.cardBackground)
+                        .clipShape(Circle())
+                }
+                .accessibilityIdentifier(AccessibilityIdentifiers.Main.settingsButton)
+
+                Spacer()
+
+                Button {
+                    showCityListSheet = true
+                } label: {
+                    Image(systemName: "list.bullet")
+                        .font(.body)
+                        .foregroundStyle(Colors.primaryText)
+                        .padding(BaseNumeral.iconButtonPadding)
+                        .background(Colors.cardBackground)
+                        .clipShape(Circle())
+                }
+                .accessibilityIdentifier(AccessibilityIdentifiers.Main.cityListButton)
+            }
+            .padding(.horizontal, BaseNumeral.controlPanelHorizontalPadding)
+            .padding(.top, BaseNumeral.textSpacing)
+
+            // Основной контент погоды
+            WeatherMainView(
+                currentForecast: currentForecast,
+                isFromCache: isFromCache,
+                cacheAgeDescription: cacheAgeDescription
+            ) {
+                onPullToRefresh()
+            }
+        }
+    }
+}

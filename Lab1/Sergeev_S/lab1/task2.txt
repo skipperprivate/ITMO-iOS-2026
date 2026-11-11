@@ -1,0 +1,78 @@
+/*
+Point — структура с x, y типа Double:
+
+mutating func move(byX:byY:);
+
+вычисляемое свойство distanceToOrigin: Double;
+
+соответствие Equatable, Hashable.
+
+Rectangle — структура с origin: Point, width, height:
+
+вычисляемые свойства area, perimeter, center;
+
+mutating func scale(by factor: Double);
+
+func contains(_ point: Point) -> Bool;
+
+init с валидацией: если width <= 0 или height <= 0 — использовать значения по умолчанию 1.0.
+*/
+
+struct Point {
+  var x: Double
+  var y: Double
+  var distanceToOrigin: Double {
+    (x * x + y * y).squareRoot()  // return опускается, если нет преддействий
+  }
+  
+  mutating func move(byX: Double, byY: Double) {
+    x += byX
+    y += byY
+  }
+}
+
+var point1 = Point(x:1, y:1)
+point1.move(byX:1, byY:-1)
+print(point1)
+
+print(point1.distanceToOrigin)
+
+struct Rectangle {
+  var origin: Point
+  var width: Double
+  var height: Double
+  
+  var area: Double {
+    width * height
+  }
+  var perimeter: Double {
+    2 * (width + height)
+  }
+  var center: Point {
+    Point(x: origin.x + width / 2,
+          y: origin.y + height / 2)
+  }
+
+  mutating func scale(byFactor: Double) {
+    width *= byFactor
+    height *= byFactor
+  }
+  
+  func contains(point: Point) -> Bool {
+    point.x >= origin.x && point.x <= origin.x + width &&
+    point.y >= origin.y && point.y <= origin.y + height
+  }
+  
+  init(origin: Point, width: Double, height: Double) {
+    self.origin = origin
+    self.width = width > 0 ? width : 1.0
+    self.height = height > 0 ? height : 1.0
+  }
+}
+
+var rectangle1 = Rectangle(origin: point1, width: 2, height: 2)
+print(rectangle1)
+var rectangle2 = Rectangle(origin: point1, width: -2, height: 2)
+print(rectangle2)
+var rectangle3 = Rectangle(origin: point1, width: 2, height: -2)
+print(rectangle3)

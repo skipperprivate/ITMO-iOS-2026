@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "C6E8D22C-683F-4CC8-A32B-6A6A3E8A1B83"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "859961DC-3A25-4F2B-9DD6-1D4E08594C2B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Wetaher_app_IOS/UI/AppNavStack.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "66915580-B6DA-4E8A-ADCF-BAC6D24D05A9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Wetaher_app_IOS/Data/Network/NetworkClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "getCityWeather(latitude:longitude:weatherResponse:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "542DB320-549F-4F41-B34B-A608B1A3460C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Wetaher_app_IOS/Data/WeatherRepositoryImpl.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "SearchCities(query:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0D96B196-1AEE-4D7C-8E16-08E306878885"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Wetaher_app_IOS/Data/Network/NetworkClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "getCityLatLongByName(cityName:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "56D010CC-C4F8-46D7-8BA1-2B19CEF9F10A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Wetaher_app_IOS/Data/Network/NetworkClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "getCityLatLongByName(cityName:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "188A87AA-752E-4F50-8919-6508E51F9ADB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Wetaher_app_IOS/Data/Network/NetworkClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "getCityLatLongByName(cityName:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7F84D0CC-9536-4D52-BE17-2E326EF9F15F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Wetaher_app_IOS/Data/WeatherRepositoryImpl.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "SearchCities(query:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7F84D0CC-9536-4D52-BE17-2E326EF9F15F - d8cf1a884bc36eb2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Wetaher_app_IOS.WeatherRepositoryImpl.SearchCities(query: Swift.String) async -&gt; Swift.Result&lt;Swift.Array&lt;Wetaher_app_IOS.CityResponse&gt;, Wetaher_app_IOS.CityResponseError&gt;"
+                  moduleName = "Wetaher_app_IOS.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/romanzyuzin/Documents/Wetaher_app_IOS/Wetaher_app_IOS/Data/WeatherRepositoryImpl.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88">
+               </Location>
+               <Location
+                  uuid = "7F84D0CC-9536-4D52-BE17-2E326EF9F15F - b4a55b9565a857f9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for Wetaher_app_IOS.WeatherRepositoryImpl.SearchCities(query: Swift.String) async -&gt; Swift.Result&lt;Swift.Array&lt;Wetaher_app_IOS.CityResponse&gt;, Wetaher_app_IOS.CityResponseError&gt;"
+                  moduleName = "Wetaher_app_IOS.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/romanzyuzin/Documents/Wetaher_app_IOS/Wetaher_app_IOS/Data/WeatherRepositoryImpl.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88">
+               </Location>
+               <Location
+                  uuid = "7F84D0CC-9536-4D52-BE17-2E326EF9F15F - cfabe7630c0caab0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Wetaher_app_IOS.WeatherRepositoryImpl.SearchCities(query: Swift.String) async -&gt; Swift.Result&lt;Swift.Array&lt;Wetaher_app_IOS.CityResponse&gt;, Wetaher_app_IOS.CityResponseError&gt;"
+                  moduleName = "Wetaher_app_IOS.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/romanzyuzin/Documents/Wetaher_app_IOS/Wetaher_app_IOS/Data/WeatherRepositoryImpl.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "34CD76E8-CC76-4890-B536-79A5995DD54A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Wetaher_app_IOS/Data/WeatherRepositoryImpl.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "SearchCities(query:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1D75E365-0444-4341-900A-33BD99565EF8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Wetaher_app_IOS/Data/WeatherRepositoryImpl.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "SearchCities(query:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DCE7A867-82B6-4190-86E4-6FB7FE02D93F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Wetaher_app_IOS/Data/WeatherRepositoryImpl.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
+            landmarkName = "SearchCities(query:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DCE7A867-82B6-4190-86E4-6FB7FE02D93F - d8cf1a884bc36c3d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Wetaher_app_IOS.WeatherRepositoryImpl.SearchCities(query: Swift.String) async -&gt; Swift.Result&lt;Swift.Array&lt;Wetaher_app_IOS.CityResponse&gt;, Wetaher_app_IOS.CityResponseError&gt;"
+                  moduleName = "Wetaher_app_IOS.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/romanzyuzin/Documents/Wetaher_app_IOS/Wetaher_app_IOS/Data/WeatherRepositoryImpl.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "107"
+                  endingLineNumber = "107">
+               </Location>
+               <Location
+                  uuid = "DCE7A867-82B6-4190-86E4-6FB7FE02D93F - cfabe7630c0ca83f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Wetaher_app_IOS.WeatherRepositoryImpl.SearchCities(query: Swift.String) async -&gt; Swift.Result&lt;Swift.Array&lt;Wetaher_app_IOS.CityResponse&gt;, Wetaher_app_IOS.CityResponseError&gt;"
+                  moduleName = "Wetaher_app_IOS.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/romanzyuzin/Documents/Wetaher_app_IOS/Wetaher_app_IOS/Data/WeatherRepositoryImpl.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "107"
+                  endingLineNumber = "107">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C1E7F13C-6EF3-4435-A749-CB6387C3A210"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Wetaher_app_IOS/UI/Pages/Cities/CityListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "searchCities()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C1E7F13C-6EF3-4435-A749-CB6387C3A210 - 1684163943e88f13"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) suspend resume partial function for closure #1 () async -&gt; () in Wetaher_app_IOS.CityListViewModel.searchCities() -&gt; ()"
+                  moduleName = "Wetaher_app_IOS.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/romanzyuzin/Documents/Wetaher_app_IOS/Wetaher_app_IOS/UI/Pages/Cities/CityListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77">
+               </Location>
+               <Location
+                  uuid = "C1E7F13C-6EF3-4435-A749-CB6387C3A210 - d4ad0274cd7702f5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) await resume partial function for closure #1 () async -&gt; () in Wetaher_app_IOS.CityListViewModel.searchCities() -&gt; ()"
+                  moduleName = "Wetaher_app_IOS.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/romanzyuzin/Documents/Wetaher_app_IOS/Wetaher_app_IOS/UI/Pages/Cities/CityListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77">
+               </Location>
+               <Location
+                  uuid = "C1E7F13C-6EF3-4435-A749-CB6387C3A210 - db9ed83e29cfcb2d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #1 () async -&gt; () in Wetaher_app_IOS.CityListViewModel.searchCities() -&gt; ()"
+                  moduleName = "Wetaher_app_IOS.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/romanzyuzin/Documents/Wetaher_app_IOS/Wetaher_app_IOS/UI/Pages/Cities/CityListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77">
+               </Location>
+               <Location
+                  uuid = "C1E7F13C-6EF3-4435-A749-CB6387C3A210 - 3a6dc33c6333652e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for closure #1 () async -&gt; () in Wetaher_app_IOS.CityListViewModel.searchCities() -&gt; ()"
+                  moduleName = "Wetaher_app_IOS.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/romanzyuzin/Documents/Wetaher_app_IOS/Wetaher_app_IOS/UI/Pages/Cities/CityListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D1473B48-5022-4136-B43E-BA5B5F3D4F71"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Wetaher_app_IOS/UI/Pages/Cities/CityListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "searchCities()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5271FFAB-9830-49E3-8EB8-DBCD2269BBEE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Wetaher_app_IOS/UI/Pages/Cities/CityListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "searchCities()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5271FFAB-9830-49E3-8EB8-DBCD2269BBEE - db9ed83e29cfcba9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #1 () async -&gt; () in Wetaher_app_IOS.CityListViewModel.searchCities() -&gt; ()"
+                  moduleName = "Wetaher_app_IOS.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/romanzyuzin/Documents/Wetaher_app_IOS/Wetaher_app_IOS/UI/Pages/Cities/CityListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81">
+               </Location>
+               <Location
+                  uuid = "5271FFAB-9830-49E3-8EB8-DBCD2269BBEE - c28bcb585d5dd6e9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Wetaher_app_IOS.CityResponse) -&gt; Wetaher_app_IOS.City in closure #1 () async -&gt; () in Wetaher_app_IOS.CityListViewModel.searchCities() -&gt; ()"
+                  moduleName = "Wetaher_app_IOS.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/romanzyuzin/Documents/Wetaher_app_IOS/Wetaher_app_IOS/UI/Pages/Cities/CityListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E98CF115-448F-4144-8EDA-700939957E5E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Wetaher_app_IOS/UI/Pages/Cities/CityListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "searchCities()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
