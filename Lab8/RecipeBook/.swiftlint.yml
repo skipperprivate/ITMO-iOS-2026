@@ -1,0 +1,42 @@
+disabled_rules:
+  - trailing_whitespace
+  - todo
+
+opt_in_rules:
+  - empty_count
+  - empty_string
+  - force_unwrapping
+  - explicit_init
+  - closure_spacing
+  - sorted_first_last
+
+excluded:
+  - Pods
+  - Carthage
+  - DerivedData
+  - .build
+
+line_length:
+  warning: 120
+  error: 200
+  ignores_comments: true
+  ignores_urls: true
+
+identifier_name:
+  min_length: 2
+  max_length: 50
+  excluded:
+    - id
+    - URL
+    - x
+    - y
+
+type_body_length:
+  warning: 300
+  error: 500
+
+function_body_length:
+  warning: 60
+  error: 100
+
+reporter: xcode
