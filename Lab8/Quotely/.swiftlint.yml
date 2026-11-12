@@ -1,0 +1,53 @@
+# Настройки SwiftLint для Quotely.
+# Линтер запускается на этапе сборки (Build Phases → SwiftLint)
+# и вручную командой `swiftlint` из этой папки.
+
+included:
+  - Quotely
+  - QuotelyTests
+  - QuotelyUITests
+
+excluded:
+  - Quotely.xcodeproj
+
+# Правила, выключенные по умолчанию, которые включаем дополнительно.
+opt_in_rules:
+  - force_unwrapping                   # запрет `!` для optional
+  - implicitly_unwrapped_optional      # запрет типов вида `String!`
+  - sorted_imports                     # import по алфавиту
+  - superfluous_else                   # лишний else после return/throw
+  - prefer_key_path                    # `.map(\.id)` вместо `.map { $0.id }`
+  - vertical_whitespace_opening_braces # без пустой строки после `{`
+  - unneeded_throws_rethrows           # throws у функции, которая ничего не бросает
+  - empty_count                        # `isEmpty` вместо `count == 0`
+  - first_where                        # `first(where:)` вместо `filter().first`
+  - closure_spacing                    # пробелы внутри `{ }` у замыканий
+
+# Пороговые значения стандартных правил.
+line_length:
+  warning: 100
+  error: 150
+  ignores_comments: true
+
+function_body_length:
+  warning: 30
+  error: 80
+
+type_body_length:
+  warning: 150
+  error: 300
+
+file_length:
+  warning: 200
+  error: 500
+
+identifier_name:
+  min_length: 2
+  excluded:
+    - id
+
+cyclomatic_complexity:
+  warning: 8
+  error: 15
+
+reporter: xcode
