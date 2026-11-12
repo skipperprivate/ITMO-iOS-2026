@@ -1,0 +1,324 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "catalog.empty" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "No quotes yet. Tap Load." } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Нет цитат. Нажмите «Загрузить»." } }
+      }
+    },
+    "catalog.favorite" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Favorite" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "В избранное" } }
+      }
+    },
+    "catalog.load" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Load" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Загрузить" } }
+      }
+    },
+    "catalog.loading" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Loading quotes" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Выполняется запрос" } }
+      }
+    },
+    "catalog.remove" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Remove" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Убрать" } }
+      }
+    },
+    "catalog.title" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Catalog" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Каталог" } }
+      }
+    },
+    "common.cancel" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Cancel" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Отмена" } }
+      }
+    },
+    "common.ok" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "OK" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "ОК" } }
+      }
+    },
+    "error.connection_failed" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Could not connect to the server. Please try again." } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Не удалось связаться с сервером. Повторите попытку." } }
+      }
+    },
+    "error.decoding" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Could not read the server response: unexpected format." } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Не удалось прочитать данные сервера: неожиданный формат ответа." } }
+      }
+    },
+    "error.encoding" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Could not prepare data for sending." } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Не удалось подготовить данные для отправки." } }
+      }
+    },
+    "error.http.client" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "The server rejected the request (HTTP %lld). %@" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Запрос не принят сервером (HTTP %lld). %@" } }
+      }
+    },
+    "error.http.default_details" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Please try again later." } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Повторите попытку позже." } }
+      }
+    },
+    "error.http.server" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "The server is temporarily unavailable (HTTP %lld). %@" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Сервер временно недоступен (HTTP %lld). %@" } }
+      }
+    },
+    "error.invalid_response" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "The server returned an invalid response." } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Сервер вернул некорректный ответ." } }
+      }
+    },
+    "error.invalid_url" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Could not create the request URL." } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Не удалось сформировать адрес запроса." } }
+      }
+    },
+    "error.no_internet" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "No internet connection. Check your connection and try again." } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Нет подключения к интернету. Проверьте соединение и повторите попытку." } }
+      }
+    },
+    "error.timed_out" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "The server did not respond in time. Please try again." } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Сервер не ответил вовремя. Повторите попытку." } }
+      }
+    },
+    "error.title" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Error" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Ошибка" } }
+      }
+    },
+    "error.unknown" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Unknown error while contacting the server. Please try again." } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Неизвестная ошибка при обращении к серверу. Повторите попытку." } }
+      }
+    },
+    "favorites.empty" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "No favorites yet. Mark quotes in Catalog." } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Избранное пусто. Отметьте цитаты в «Каталоге»." } }
+      }
+    },
+    "favorites.title" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Favorites" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Избранное" } }
+      }
+    },
+    "form.author" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Author" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Автор" } }
+      }
+    },
+    "form.edit_title" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Edit quote" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Изменить цитату" } }
+      }
+    },
+    "form.save" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Save" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Сохранить" } }
+      }
+    },
+    "form.save_error" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Could not save quote" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Не удалось сохранить цитату" } }
+      }
+    },
+    "form.saving" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Saving quote" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Сохранение цитаты" } }
+      }
+    },
+    "form.text" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Text" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Текст" } }
+      }
+    },
+    "form.text_field" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Quote text" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Текст цитаты" } }
+      }
+    },
+    "form.validation.author_empty" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Enter the author's name." } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Укажите автора." } }
+      }
+    },
+    "form.validation.author_length" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "The author name must be no longer than %lld characters." } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Имя автора не должно быть длиннее %lld символов." } }
+      }
+    },
+    "form.validation.text_empty" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Enter quote text." } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Введите текст цитаты." } }
+      }
+    },
+    "form.validation.text_length" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "The quote text must be no longer than %lld characters." } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Текст цитаты не должен быть длиннее %lld символов." } }
+      }
+    },
+    "quote.favorite" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Favorite" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "В избранном" } }
+      }
+    },
+    "settings.authors" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Authors" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Авторов" } }
+      }
+    },
+    "settings.average_length" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Average length" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Средняя длина" } }
+      }
+    },
+    "settings.delete_all" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Delete all quotes" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Удалить все цитаты" } }
+      }
+    },
+    "settings.display" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Appearance" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Отображение" } }
+      }
+    },
+    "settings.favorite_count" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Favorites" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "В избранном" } }
+      }
+    },
+    "settings.reset" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Reset settings" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Сбросить настройки" } }
+      }
+    },
+    "settings.show_author" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Show author" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Показывать автора" } }
+      }
+    },
+    "settings.storage" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Storage" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Хранилище" } }
+      }
+    },
+    "settings.title" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Settings" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Настройки" } }
+      }
+    },
+    "settings.total" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Total quotes" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Всего цитат" } }
+      }
+    },
+    "tab.catalog" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Catalog" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Каталог" } }
+      }
+    },
+    "tab.favorites" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Favorites" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Избранное" } }
+      }
+    },
+    "tab.settings" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Settings" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Настройки" } }
+      }
+    },
+    "tab.today" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Today" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Сегодня" } }
+      }
+    },
+    "today.another" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Show another" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Показать другую" } }
+      }
+    },
+    "today.empty" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "No quotes yet. Load them in Catalog." } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Нет цитат. Загрузите их в «Каталоге»." } }
+      }
+    },
+    "today.favorite" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Favorite" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "В избранное" } }
+      }
+    },
+    "today.remove_favorite" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Remove from favorites" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Убрать из избранного" } }
+      }
+    },
+    "today.title" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Quote of the day" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Цитата дня" } }
+      }
+    }
+  },
+  "version" : "1.0"
+}
