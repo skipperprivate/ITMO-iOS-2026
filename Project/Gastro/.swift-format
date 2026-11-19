@@ -1,0 +1,11 @@
+{
+  "indentation": {
+    "spaces": 4
+  },
+  "lineLength": 120,
+  "indentSwitchCaseLabels": true,
+  "indentConditionalCompilationBlocks": false,
+  "lineBreakBeforeEachArgument": true,
+  "prioritizeKeepingFunctionOutputTogether": true,
+  "maximumBlankLines": 1
+}

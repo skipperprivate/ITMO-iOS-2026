@@ -1,0 +1,51 @@
+included:
+  - Untitled Project
+  - GastroTests
+  - GastroUITests
+excluded:
+  - LegacyDemo
+  - Docs
+switch_case_alignment:
+  indented_cases: true
+line_length:
+  warning: 120
+  error: 160
+  ignores_urls: true
+identifier_name:
+  excluded:
+    - id
+# Layout belongs to swift-format; avoid contradictory diagnostics.
+disabled_rules:
+  - opening_brace
+  - trailing_comma
+
+# Show diagnostics without failing the build.
+lenient: true
+
+opt_in_rules:
+  - force_unwrapping
+  - private_swiftui_state
+  - first_where
+  - contains_over_filter_count
+  - contains_over_filter_is_empty
+  - empty_count
+  - sorted_imports
+  - conditional_returns_on_newline
+  - redundant_nil_coalescing
+  - fatal_error_message
+
+force_unwrapping: warning
+force_cast: warning
+force_try: warning
+
+function_body_length:
+  warning: 50
+  error: 100
+
+cyclomatic_complexity:
+  warning: 10
+  error: 20
+
+type_body_length:
+  warning: 300
+  error: 500
