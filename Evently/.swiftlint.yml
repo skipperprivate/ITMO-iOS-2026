@@ -1,0 +1,61 @@
+included:
+  - Evently
+
+excluded:
+  - .build
+  - DerivedData
+
+disabled_rules:
+  - inclusive_language
+  - vertical_whitespace
+
+line_length:
+  warning: 120
+  error: 180
+
+type_body_length:
+  warning: 300
+  error: 450
+
+file_length:
+  warning: 500
+  error: 800
+
+function_body_length:
+  warning: 50
+  error: 100
+
+function_parameter_count:
+  warning: 8
+  error: 10
+
+identifier_name:
+  min_length: 2
+  excluded:
+    - id
+
+trailing_whitespace:
+  ignores_empty_lines: true
+
+opt_in_rules:
+  - force_unwrapping
+  - implicitly_unwrapped_optional
+  - private_swiftui_state
+  - unhandled_throwing_task
+  - closure_body_length
+  - empty_count
+  - sorted_imports
+  - modifier_order
+
+cyclomatic_complexity:
+  warning: 10
+  error: 20
+
+closure_body_length:
+  warning: 60
+  error: 100
+
+force_unwrapping:
+  severity: warning
+
+reporter: xcode

@@ -1,0 +1,24 @@
+# API keys and secrets
+Secrets.xcconfig
+**/Secrets.xcconfig
+.env
+.env.*
+
+# macOS
+.DS_Store
+
+# Xcode
+DerivedData/
+build/
+*.xcuserstate
+xcuserdata/
+*.xcuserdatad/
+*.xcscmblueprint
+*.xccheckout
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# SwiftLint
+.swiftlint_cache/

@@ -1,0 +1,436 @@
+{
+  "sourceLanguage" : "ru",
+  "strings" : {
+    "error.cantShow.details%@" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удалось загрузить подробности: %@"
+          }
+        }
+      }
+    },
+    "favorite.add" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавить в избранное"
+          }
+        }
+      }
+    },
+    "favorite.delete" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Удалить из избранного"
+          }
+        }
+      }
+    },
+    "home.featured.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Featured"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Рекомендуемые"
+          }
+        }
+      }
+    },
+    "home.loadingEvents" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Loading events…"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Загрузка событий…"
+          }
+        }
+      }
+    },
+    "home.nearEvents" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Events near you"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ближайшие события"
+          }
+        }
+      }
+    },
+    "home.search" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поиск"
+          }
+        }
+      }
+    },
+    "home.search.placeholder" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поиск"
+          }
+        }
+      }
+    },
+    "home.seeAll" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "See all"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Показать все"
+          }
+        }
+      }
+    },
+    "home.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Discover events"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Найди событие"
+          }
+        }
+      }
+    },
+    "OK" : {
+
+    },
+    "search.no_results" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nothing found"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ничего не найдено"
+          }
+        }
+      }
+    },
+    "search.placeholder" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Find an event..."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Найти мероприятие..."
+          }
+        }
+      }
+    },
+    "search.start_typing" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Find an event"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Найдите мероприятие"
+          }
+        }
+      }
+    },
+    "search.start_typing.description" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start typing the name of the concert, event, or venue."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Начните вводить название концерта, мероприятия или площадки"
+          }
+        }
+      }
+    },
+    "settings.currentTown" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Текущий город"
+          }
+        }
+      }
+    },
+    "support.report" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сервис"
+          }
+        }
+      }
+    },
+    "support.report.title" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тема сообщения"
+          }
+        }
+      }
+    },
+    "technologies" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Технологии"
+          }
+        }
+      }
+    },
+    "ticketmaster.town.list.condition" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Список городов в странах присутствия Ticketmaster. Наличие мероприятий зависит от данных сервиса."
+          }
+        }
+      }
+    },
+    "В выбранной категории пока нет мероприятий" : {
+
+    },
+    "Выбор города" : {
+
+    },
+    "Выбранный город" : {
+
+    },
+    "Выбрать город" : {
+
+    },
+    "Главная" : {
+
+    },
+    "Готово" : {
+
+    },
+    "Демо: отправка идёт в JSONPlaceholder, сообщения не доставляются разработчику" : {
+
+    },
+    "Для мероприятий из избранного. Доступ к уведомлениям iOS запросит при первом добавлении." : {
+
+    },
+    "Добавьте мероприятие в избранное, чтобы оно появилось здесь" : {
+
+    },
+    "Добро пожаловать в Evently" : {
+
+    },
+    "Доступные города" : {
+
+    },
+    "Загружаем ещё..." : {
+
+    },
+    "Загружаем подробности..." : {
+
+    },
+    "Закрыть" : {
+
+    },
+    "Заметка" : {
+
+    },
+    "Избранное" : {
+
+    },
+    "Ищем мероприятия..." : {
+
+    },
+    "Локация" : {
+
+    },
+    "Мероприятие" : {
+
+    },
+    "Мероприятия не найдены" : {
+
+    },
+    "Название города или страны" : {
+
+    },
+    "Напоминания" : {
+
+    },
+    "Напоминать о мероприятии" : {
+
+    },
+    "Настройки" : {
+
+    },
+    "Находите интересные мероприятия и сохраняйте их." : {
+
+    },
+    "Не удалось выполнить поиск" : {
+
+    },
+    "Не удалось загрузить мероприятия" : {
+
+    },
+    "Не удалось отправить сообщение" : {
+
+    },
+    "Нет избранных событий" : {
+
+    },
+    "Нет подтверждённого покрытия Ticketmaster" : {
+
+    },
+    "О мероприятии" : {
+
+    },
+    "О приложении" : {
+
+    },
+    "Обратная связь" : {
+
+    },
+    "ОК" : {
+
+    },
+    "Определить автоматически" : {
+
+    },
+    "Определяем местоположение…" : {
+
+    },
+    "Организатор не предоставил описание мероприятия." : {
+
+    },
+    "Открыть билеты на Ticketmaster" : {
+
+    },
+    "Отмена" : {
+
+    },
+    "Отправить" : {
+
+    },
+    "Ошибка" : {
+
+    },
+    "По умолчанию показываются события США" : {
+
+    },
+    "Повторить" : {
+
+    },
+    "Поиск мероприятий" : {
+
+    },
+    "Попробовать снова" : {
+
+    },
+    "Продолжить" : {
+
+    },
+    "Расскажите подробнее..." : {
+
+    },
+    "Редактировать заметку" : {
+
+    },
+    "Сбросить выбранный город" : {
+
+    },
+    "Сервис отработал успешно!" : {
+
+    },
+    "Сохранить" : {
+
+    },
+    "Спасибо за обращение!" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Спасибо за обращение!"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.1"
+}
