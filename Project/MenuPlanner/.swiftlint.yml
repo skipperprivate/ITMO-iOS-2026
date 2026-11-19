@@ -1,0 +1,12 @@
+# Shared by the app, unit tests and UI tests.
+included:
+  - MenuPlanner
+  - MenuPlannerTests
+  - MenuPlannerUITests
+
+excluded:
+  - .build
+  - DerivedData
+  - MenuPlanner.xcodeproj
+
+reporter: xcode
